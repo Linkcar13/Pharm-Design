@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Lora&family=Signika:wght@300;400;700&display=swap');
+
+/* Author: Carlos Estrada */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+}
+body{
+    font-family: 'Signika', sans-serif;
+}
+
+:root{
+    --background: linear-gradient(135deg,#062e127e 0%,#062e127e 100%) ;
+    --color-primary:#373838;
+    --color-secondary:#67ca7c;
+    --boton-padding: 20px 40px;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.Logo{
+    font-style: italic;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+nav ul li a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #67ca7c;
+    transition: 3ms;
+    cursor: pointer;
+}
+
+.nav_span{
+    color: #67ca7c;;
+}
+
+.Contact_Btn{
+    border: none;
+    background-color: #67ca7c;
+    padding: 12px 30px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    transition: 4ms;
+}
+.Contact_Btn:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.slider{
+    width: 100%;
+    display: flex;
+    overflow-y: auto;
+    padding: auto;
+    
+}
+.slide {
+    position: relative;
+}
+
+.slide img {
+    width: 850px;
+    object-fit: cover;
+    height: 850px;
+}
+.slide_caption{
+    width: 100%;
+    height: 20%;
+    position:absolute;
+    bottom: 0;
+    padding: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    overflow: auto;
+}
+.slide_caption h2 , 
+.slide_caption p{
+    font-style: italic;
+    margin: 0;
+    font-weight: bold;
+}
+
+.presentacion {
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: center;
+    padding-top: 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+.subtitle_presentacion{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+.presentacion__picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.presentacion__copy{
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.presentacion__cta{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    padding: var(--boton-padding);
+    border-radius: 40px;
+}
+
+/* para la presentación de los valores de la empresa se crea un chart responsive con css grid*/
+.Valores{
+    font-style: italic;
+    padding-top: 50px;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 100px;
+    justify-items: center;
+    align-items: center;
+}
+.valor {
+    position: relative;
+}
+
+.valor img {
+    width: 100%;
+    object-fit: cover;
+    height: 1000px;
+}
+
+.valor_caption{
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    position:absolute;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: right;
+    overflow: auto;
+}
+
+
+.productos{
+    font-style: italic;
+    padding-top: 10px;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 100px;
+    grid-column-gap: 15px;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.producto{
+    position: relative;
+}
+
+.producto img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.descripcion_producto{
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: right;
+}
+
+.clientes{
+    font-style: italic;
+    padding-bottom: 200px;
+    padding-top: 50px;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 100px;
+    justify-items: center;
+    align-items: center;
+}
+
+.cliente{
+    position: relative;
+}
+
+.cliente iframe {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+}
+
+.accordion-item img {
+
+    width: 400px;
+    object-fit: cover;
+}
+
+
+@keyframes slider {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;} 
+}
+
+
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }

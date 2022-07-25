@@ -1,0 +1,402 @@
+<!-- Author: Carlos Estrada -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Farmacias Tortuga</title>
+</head>
+
+<body>
+    <header id="Home">
+        <nav>
+            <h2 class="Logo">Farmacias <Span class="nav_span">Tortuga</Span></h2>
+            <ul>
+                <li> <a href="#About">Sobre Nosotros</a> </li>
+                <li><a href="#Products">Nuestros Productos</a></li>
+                <li><a href="#Services">Nuestros Servicios</a></li>
+                <li><a href="#Clients">Nuestros Clientes</a></li>
+            </ul>
+            <a href="#Contacto"><button class="Contact_Btn">Contáctenos</button></a>
+        </nav>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Assets/Slider5.jpg" class="img-fluid rounded mx-auto d-block w-100" alt="Slide 1">
+                    <div class="slide_caption">
+                        <h2>La mejor atención</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolore rem voluptates
+                            veritatis? Voluptatum officiis eos repellendus pariatur laboriosam non deserunt? Animi velit
+                            facilis voluptas minima iusto quae eligendi explicabo.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Slider3.jpg" class="img-fluid rounded mx-auto d-block w-100" alt="Slide 2">
+                    <div class="slide_caption">
+                        <h2>Medicamentos de Calidad</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi cumque in
+                            architecto impedit quo, tempora minima facilis doloremque vel quaerat nihil, unde porro
+                            consectetur voluptas, deleniti dolorem! Sed, dignissimos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Slider2.jpg" class="img-fluid rounded mx-auto d-block w-100" alt="Slide 3">
+                    <div class="slide_caption">
+                        <h2>Al Alcance de tu bolsillo</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ducimus aperiam,
+                            voluptatem a dolore laudantium voluptate praesentium, molestiae obcaecati corrupti maiores
+                            eos distinctio odit mollitia doloribus illum saepe? Soluta, culpa.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Slider4.jpg" class="img-fluid rounded mx-auto d-block w-100" alt="Slide 4">
+                    <div class="slide_caption">
+                        <h2>La mejor atención</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quasi ex beatae dolorum sint
+                            quam deserunt eligendi incidunt? Delectus cum numquam animi non nihil molestiae maxime saepe
+                            ad excepturi consectetur?</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Slider1.jpg" class="img-fluid rounded mx-auto d-block w-100" alt="Slide 5">
+                    <div class="slide_caption">
+                        <h2>La mejor atención</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, labore officiis!
+                            Maiores nostrum aperiam ipsam rem temporibus error minima quis quaerat voluptatem sequi
+                            natus, perferendis incidunt praesentium numquam quo rerum.</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section id="About">
+        <div class=presentacion>
+            <img src="Assets/Slider1.jpg" alt="profile_pick" class="img-fluid presentacion__picture">
+            <h2 class="subtitle_presentacion">Somos "Farmacias Tortuga" uno de los mejores Centros Farmaceuticos del
+                Ecuador</h2>
+            <p class="presentacion__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatum
+                assumenda voluptate aliquid fuga consectetur consequuntur ipsam neque? Perspiciatis magnam obcaecati
+                ratione illum. Perferendis quaerat est commodi, minima earum odit.
+                Deserunt corporis vero officiis atque commodi illum. Ullam unde maxime ducimus reprehenderit minima
+                tempore, reiciendis aliquam quaerat, amet excepturi suscipit asperiores eveniet numquam. Reprehenderit
+                placeat suscipit ipsum sunt magnam eius?</p>
+            <a href="#Contacto" class="presentacion__cta">Contáctenos</a>
+        </div>
+        <div class="Valores">
+            <div class="valor">
+                <img src="Assets/valor1.jpg" class="img-fluid" alt="">
+                <div class="valor_caption">
+                    <h2 clas>Misión</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, molestias iste? Officia cum est
+                        facere saepe assumenda tenetur temporibus consectetur repellendus eligendi corrupti modi quis,
+                        architecto voluptatibus! Repellat, quis praesentium.</p>
+                </div>
+            </div>
+            <div class="valor">
+                <img src="Assets/valor2.jpg" class="img-fluid" alt="">
+                <div class="valor_caption">
+                    <h2>Visión</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, molestias iste? Officia cum est
+                        facere saepe assumenda tenetur temporibus consectetur repellendus eligendi corrupti modi quis,
+                        architecto voluptatibus! Repellat, quis praesentium.</p>
+                </div>
+            </div>
+            <div class="valor">
+                <img src="Assets/Valor3.jpg" class="img-fluid" alt="">
+                <div class="valor_caption">
+                    <h2>Propósito</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, molestias iste? Officia cum est
+                        facere saepe assumenda tenetur temporibus consectetur repellendus eligendi corrupti modi quis,
+                        architecto voluptatibus! Repellat, quis praesentium.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Products">
+        <h2 style="padding-top: 50px; padding-left: 8%; padding-right: 8%;">Nuestros Productos</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="Assets/med1.jpg" class="img-fluid" alt="">
+                <div class="descripcion_producto">
+                    <h5>Medicamentos Concurrentes</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil iste aut porro odio non!
+                        Repudiandae, quasi laborum a provident expedita est esse architecto at ullam, voluptates sit
+                        iure! Libero, amet.</p>
+                    <a href="proximamente.html" class="btn btn-secondary">Go Shop</a>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="Assets/med2.jpg" class="img-fluid" alt="">
+                <div class="descripcion_producto">
+                    <h5>Medicamentos para el resfriado</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil iste aut porro odio non!
+                        Repudiandae, quasi laborum a provident expedita est esse architecto at ullam, voluptates sit
+                        iure! Libero, amet.</p>
+                    <a href="proximamente.html" class="btn btn-secondary">Go Shop</a>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="Assets/med3.jpg" class="img-fluid" alt="">
+                <div class="descripcion_producto">
+                    <h5>Suplementos</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil iste aut porro odio non!
+                        Repudiandae, quasi laborum a provident expedita est esse architecto at ullam, voluptates sit
+                        iure! Libero, amet.</p>
+                    <a href="proximamente.html" class="btn btn-secondary">Go Shop</a>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="Assets/med4.jpg" class="img-fluid" alt="">
+                <div class="descripcion_producto">
+                    <h5>Multivitamínicos</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil iste aut porro odio non!
+                        Repudiandae, quasi laborum a provident expedita est esse architecto at ullam, voluptates sit
+                        iure! Libero, amet.</p>
+                    <a href="proximamente.html" class="btn btn-secondary">Go Shop</a>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="Assets/med5.jpg" class="img-fluid" alt="">
+                <div class="descripcion_producto">
+                    <h5>Aseo Personal</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil iste aut porro odio non!
+                        Repudiandae, quasi laborum a provident expedita est esse architecto at ullam, voluptates sit
+                        iure! Libero, amet.</p>
+                    <a href="proximamente.html" class="btn btn-secondary">Go Shop</a>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="Assets/med6.jpg" class="img-fluid" alt="">
+                <div class="descripcion_producto">
+                    <h5>Aseo Femenino</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil iste aut porro odio non!
+                        Repudiandae, quasi laborum a provident expedita est esse architecto at ullam, voluptates sit
+                        iure! Libero, amet.</p>
+                    <a href="proximamente.html" class="btn btn-secondary">Go Shop</a>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="Assets/med7.jpg" class="img-fluid" alt="">
+                <div class="descripcion_producto">
+                    <h5>Snacks</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil iste aut porro odio non!
+                        Repudiandae, quasi laborum a provident expedita est esse architecto at ullam, voluptates sit
+                        iure! Libero, amet.</p>
+                    <a href="proximamente.html" class="btn btn-secondary">Go Shop</a>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="Assets/med8.jpg" class="img-fluid" alt="">
+                <div class="descripcion_producto">
+                    <h5>Anticonceptivos</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil iste aut porro odio non!
+                        Repudiandae, quasi laborum a provident expedita est esse architecto at ullam, voluptates sit
+                        iure! Libero, amet.</p>
+                    <a href="proximamente.html" class="btn btn-secondary">Go Shop</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Services">
+        <h2 style="padding-top: 50px; padding-left: 8%; padding-right: 8%;">Nuestros Servicios</h2>
+        <div class="accordion" id="accordionPanelsStayOpenExample" style="padding-left: 8%; padding-right: 8%;">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button"
+                        style="background:  rgba(0, 0, 0, 0.9); color: white;" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Entrega a domicilio
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body text-center">
+                        <img src="Assets/servicio1.jpg" class="img-fluid" style="width: 400px;" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae beatae culpa nobis
+                            sapiente, iure perferendis, in eius voluptatibus eveniet dolorum hic ad non, ipsum eligendi
+                            repellendus quia id. Amet, nam?</p>
+                        <a href="proximamente.html" class="btn btn-secondary">Go Shop</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button"
+                        style="background:  rgba(0, 0, 0, 0.9); color: white;" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Refigeración de Medicamentos
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body text-center">
+                        <img src="Assets/servicio2.jpg" class="img-fluid" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae beatae culpa nobis
+                            sapiente, iure perferendis, in eius voluptatibus eveniet dolorum hic ad non, ipsum eligendi
+                            repellendus quia id. Amet, nam?</p>
+                        <a href="proximamente.html" class="btn btn-secondary">Go Shop</a>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button"
+                            style="background:  rgba(0, 0, 0, 0.9); color: white;" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Curaciones Menores
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body text-center">
+                            <img src="Assets/servicio3.jpg" class="img-fluid" alt="">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae beatae culpa nobis
+                                sapiente, iure perferendis, in eius voluptatibus eveniet dolorum hic ad non, ipsum
+                                eligendi repellendus quia id. Amet, nam?</p>
+                            <a href="proximamente.html" class="btn btn-secondary">Go Shop</a>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button"
+                                style="background:  rgba(0, 0, 0, 0.9); color: white;" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Suministración de Suplementos
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body text-center">
+                                <img src="Assets/servicio4.jpg" class="img-fluid" alt="">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae beatae culpa
+                                    nobis sapiente, iure perferendis, in eius voluptatibus eveniet dolorum hic ad non,
+                                    ipsum eligendi repellendus quia id. Amet, nam?</p>
+                                <a href="proximamente.html" class="btn btn-secondary">Go Shop</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>              
+    </section>
+    <section id="Clients">
+        <h2 style="padding-top: 50px; padding-left: 8%; padding-right: 8%;">¿Qué Dicen Nuestros Clientes?</h2>
+        <div class="clientes">
+            <div class="cliente">
+            <h5>Opinion De Nuestro Cliente</h5>
+            <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Zxx8L19BhhU?start=63" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="cliente">
+                <h5>Opinion De Nuestro Cliente</h5>
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/k-9Q3bTgxyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+        </div>
+    </section>
+
+    <footer id="Contacto" class="footer text-center">
+        <div class="container footer_grid">
+            <section class="footer__contact">
+                <h3 class="footer__title">Contáctenos</h3>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Su Correo Electronico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Su Comentario</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comentarios,Sugerencias,Quejas,Pedidos nos comunicaremos con ud por el correo que ha proporcionado."></textarea>
+                  </div>
+                <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.7952034366945!2d-78.4868689!3d-0.1950411!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a71b0421a4f%3A0x630a941cd3f7260e!2sFarmacias%20Medicity!5e0!3m2!1ses!2sec!4v1657834331979!5m2!1ses!2sec"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="container p-4 pb-0 ">
+                    <!-- Section: Social media -->
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/carlos.estrada.12914216/"
+                            role="button"><i class="fab fa-facebook-f"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #289452;" href="proximamente.html"
+                            role="button"><i class="fab fa-whatsapp"></i></a>
+
+                        <!-- Google -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #5074eb;" href="proximamente.html"
+                            role="button"><i class="fab fa-telegram"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="proximamente.html"
+                            role="button"><i class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="proximamente.html"
+                            role="button"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- Github -->
+                        <!-- <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!"
+                            role="button"><i class="fab fa-github"></i></a>
+                    </section> -->
+                    <!-- Section: Social media -->
+                </div>                
+            </section>
+            <nav style="background-color: rgba(0, 0, 0, 0.9);">
+                <ul>
+                    <li> <a href="#Home">Home</a> </li>
+                    <li> <a href="#About">Sobre Nosotros</a> </li>
+                    <li><a href="#Products">Nuestros Productos</a></li>
+                    <li><a href="#Services">Nuestros Servicios</a></li>
+                    <li><a href="#Clients">Nuestros Clientes</a></li>
+                </ul>
+                <a href="#Contacto"><button class="Contact_Btn">Contáctenos</button></a>
+            </nav>
+            <div class="text-center p-3" style="background-color:rgba(0, 0, 0, 0.9);">
+                <p style="color: white;">Copyright &copy; 2022 Farmacias Tortuga, Quito, Ecuador<br>
+                    Designed by
+                    <a class="text-white" href="mailto:carlos.estrada01@epn.edu.ec?subjet=Ayuda">Carlos Estrada</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/c2c9dba168.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
